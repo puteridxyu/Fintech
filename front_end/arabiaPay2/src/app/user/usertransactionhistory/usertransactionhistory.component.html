@@ -8,19 +8,24 @@
         <ng-template pTemplate="header">
             <tr>
             <th>No.</th>
+            <th>E Wallet ID</th>
+            <th>Vendor ID</th>
             <th>Date</th>
-            <th>Username</th>
             <th>Amount</th>
             <th>Details</th>
+            <th>Status</th>
            
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-transaction>
-        <tr>
+    <ng-template pTemplate="body" let-transaction let-i="rowIndex">
+        <tr style="text-align: left;">
+            <td>{{ i + 1 }}</td>
+            <td>{{transaction.ewallet_id}}</td>
+            <td>{{transaction.vendor_id}}</td>
             <td>{{transaction.date}}</td>
-            <td>{{transaction.username}}</td>
             <td>{{transaction.amount}}</td>
-            <td>{{transaction.details}}</td>
+            <td>{{transaction.desc}}</td>
+            <td>{{transaction.trans_status}}</td>
         </tr>
     </ng-template>
 </p-table>

@@ -12,13 +12,8 @@ public class Vendor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-<<<<<<< Updated upstream
     private Long vendor_id;
 
-=======
-    private Long admin_id;
-    @NotBlank
->>>>>>> Stashed changes
     private String username;
     private String password;
     private String email;
@@ -26,16 +21,11 @@ public class Vendor {
     private Integer userlevel_id;
 
     public Long getVendorID() {
-        return admin_id;
+        return vendor_id;
     }
-<<<<<<< Updated upstream
 
     public void setVendorID(Long vendor_id) {
         this.vendor_id = vendor_id;
-=======
-    public void setVendorID(Long admin_id) {
-        this.admin_id = admin_id;
->>>>>>> Stashed changes
     }
 
     public String getUsername() {
