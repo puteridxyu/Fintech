@@ -1,42 +1,47 @@
 package com.Spring.SpringBootMysql.model;
 
-
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
-
 
 @Entity
 @Table(name = "user")
 public class User {
-
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long user_id;
+    
     @NotBlank
     private String username;
+
     @NotBlank
     private String password;
-    @NotBlank
-    private String email;
-    @NotBlank 
-    private String phone_no;
-    @NotBlank
-    private Long ewallet_id;
-    @NotBlank
-    private Integer userlevel_id;
 
-    public Long getUserID() {
+    @NotBlank
+    private String level;
+
+    public Long getUserLevelID() {
         return user_id;
     }
-    public void setUserID(Long user_id) {
+    public void setUserLevelID(Long user_id) {
         this.user_id = user_id;
     }
 
-    public String getUserName() {
+    public String getLevel() {
+        return level;
+    }
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public String getUsername() {
         return username;
     }
-    public void setUserName(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
@@ -46,33 +51,4 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNo() {
-        return phone_no;
-    }
-    public void setPhoneNo(String phone_no) {
-        this.phone_no = phone_no;
-    }
-
-    public Long getEwalletID() {
-        return ewallet_id;
-    }
-    public void setEwalletID(Long ewallet_id) {
-        this.ewallet_id = ewallet_id;
-    }
-
-    public Integer getUserlevelID() {
-        return userlevel_id;
-    }
-    public void setUserlevelID(Integer userlevel_id) {
-        this.userlevel_id = userlevel_id;
-    }
-
 }
