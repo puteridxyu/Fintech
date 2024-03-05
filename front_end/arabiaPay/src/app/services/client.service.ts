@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ export class ClientService {
 
   constructor(private http : HttpClient) { }
 
-  getClients(){
-    return this.http.get(this.serverHost + "/clientlist");
+  addClient(client:any): Observable<any>{
+    return this.http.post(this.serverHost + "/register", client);
   }
 }

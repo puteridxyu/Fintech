@@ -25,7 +25,7 @@ public class ClientController {
     }
 
     //POST NEW USER
-    @PostMapping("/register")
+    @PostMapping("/registerclient")
     public Client createdClient(@RequestBody Client client) {
 
         if (client == null) throw new NullPointerException();

@@ -11,7 +11,7 @@ export class VendorService {
 
   constructor(private http : HttpClient) { }
 
-  addVendor(input:any): Observable<any>{
-    return this.http.post(this.serverHost + "/", input);
+  addVendor(vendor:any): Observable<any>{
+    return this.http.post(this.serverHost + "/register", vendor);
   }
 }

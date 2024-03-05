@@ -57,19 +57,60 @@ export class SignuppageComponent implements OnInit {
       phone_no: [null, [Validators.required]],
       user_id: [null, [Validators.required]],
     });
-  
- 
+  }
+  onSubmit() { 
+    
+    const username = this.signupUserForm.value.username;
+    const password = this.signupUserForm.value.password;
+    const ewallet_id = this.signupUserForm.value.ewallet_id;
+    const loginData = {"username": username, "password": password };
+    console.log(ewallet_id);
 
-  
-  }  
+    //add to user table
+    this.userService.addUser(this.signupUserForm.value).subscribe((res) => {
+
+      if (res!=null) {
+        const user_id = res.user_id;
+        console.log(res);
+        const clientData = {"user_id": user_id, "ewallet_id": ewallet_id }
+        const vendorData = {"user_id": user_id, "username" : username }
+
+        //add to client table
+        this.clientService.addClient(clientData).subscribe((res2) => {
+          
+          if(res2 != null) {
+            alert("Welcome to Arabia Pay!");
+            console.log(res2);
+
+            
+
+            //login
+            this.userService.loginByUsernameAndPassword(loginData).subscribe((res) => {
+
+              if (res != null) {
+                const user_id = res.user_id;
+                this.router.navigate(['', {user_id}]);
+              }
+            })
+          }
+        })
+        //add to vendor table
+        this.vendorService.addVendor(vendorData).subscribe((res3) =>  {
+
+          if(res3 != null) {
+            alert("Welcome to Arabia Pay!");
+            console.log(res3);
+          }
+        })
+      }
+    })
+  } 
   
     navigateToUserhomepage() {
     this.router.navigate(['/userhomepage']);
   }
-  goToLoginpage() {
-    this.router.navigate(['/']);
+    goToLoginpage() {
+    this.router.navigate(['/login']);
   }
-
-
 
 }

@@ -33,7 +33,7 @@ public class VendorController {
     }
 
     //TO CREATE NEW VENDOR
-    @PostMapping("/inputvendor")
+    @PostMapping("/registervendor")
     public Vendor createdvendor(@RequestBody Vendor vendor) {
 
         if (vendor == null) throw new NullPointerException();

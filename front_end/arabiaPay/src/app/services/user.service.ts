@@ -18,4 +18,8 @@ export class UserService {
   loginByUsernameAndPassword(input:any): Observable<any>{
     return this.http.post(this.serverHost + "/login", input);
   }
+
+  addUser(user: any): Observable<any>{
+    return this.http.post(this.serverHost + "/", user);
+  }
 }

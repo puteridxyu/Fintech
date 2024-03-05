@@ -58,7 +58,7 @@ export class HomepageComponent implements OnInit {
         const user_id = res.user_id;
         if (res.level == "client") {
           alert("Login successfully!");
-          this.router.navigate(['/userhompage',{user_id}]);
+          this.router.navigate(['/userhomepage',{user_id}]);
         } else if (res.level == "vendor") {
           alert("Login successfully!");
           this.router.navigate(['/vendorhomepage',{user_id}]);
