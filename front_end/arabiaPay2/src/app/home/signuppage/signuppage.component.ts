@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';
@@ -18,7 +18,7 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrl: './signuppage.component.scss'
 })
 export class SignuppageComponent {
-  password = ""
+  
   constructor (private primengConfig: PrimeNGConfig, private router: Router) {}
 
   ngOnInit() {
@@ -30,4 +30,6 @@ export class SignuppageComponent {
   goToLoginpage() {
     this.router.navigate(['/']);
   }
+
+
 }

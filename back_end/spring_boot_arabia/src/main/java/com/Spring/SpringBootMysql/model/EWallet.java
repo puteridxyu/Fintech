@@ -13,11 +13,15 @@ public class EWallet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ewallet_id;
     @NotBlank
+    private Long user_id;
+    @NotBlank
+    private Integer ewallet_no;
+    @NotBlank
     private Double balance;
     @NotBlank
     private boolean status;
+    
 
-    private Long user_id;
 
     public Long getEwalletID() {
         return ewallet_id;
@@ -42,6 +46,13 @@ public class EWallet {
     }
     public void setUser_id(Long user_id) {
         this.user_id = user_id;
+    }
+
+    public Long getEwallet_id() {
+        return ewallet_id;
+    }
+    public void setEwallet_id(Long ewallet_id) {
+        this.ewallet_id = ewallet_id;
     }
     
 

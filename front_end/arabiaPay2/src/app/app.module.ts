@@ -49,8 +49,7 @@ import {
   UtilitiesModule
 } from '@coreui/angular';
 
-import { IconModule, IconSetService } from '@coreui/icons-angular';
-import { VendorhomepageComponent } from './vendor/vendorhomepage/vendorhomepage.component';
+import { IconModule, IconSetService,} from '@coreui/icons-angular';
 import { FloatLabelModule } from 'primeng/floatlabel';
 
 const APP_CONTAINERS = [
