@@ -1,2 +1,25 @@
 <app-userheader></app-userheader>
 <b><p>TRANSACTION HISTORY</p></b>
+
+<div class="card">
+    <p-table [value]="users" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+            <th>No.</th>
+            <th>Date</th>
+            <th>Username</th>
+            <th>Amount</th>
+            <th>Details</th>
+           
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.date}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.amount}}</td>
+            <td>{{user.details}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>
