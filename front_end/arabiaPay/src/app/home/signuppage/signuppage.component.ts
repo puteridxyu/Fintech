@@ -58,14 +58,7 @@ export class SignuppageComponent implements OnInit {
       user_id: [null, [Validators.required]],
     });
   
-  onSubmit() {
-
-    const password = this.signupUserForm.value.password;
-    const email = this.signupUserForm.value.email;
-    const phone_no = this.signupUserForm.value.phone_no;
-    const user_id = this.signupUserForm.value.user_id;
-    const loginData = {"username":}
-  }
+ 
 
   
   }  
