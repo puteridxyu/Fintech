@@ -42,7 +42,7 @@ export class UserheaderComponent implements OnInit {
       {
         label: 'Logout',
         icon: 'pi pi-fw pi-sign-out',
-        routerLink: '/',
+        routerLink: '/login',
       },
       
     ];

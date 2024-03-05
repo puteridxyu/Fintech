@@ -15,11 +15,6 @@ export class HeaderpageComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Login Page',
-        icon: 'pi pi-fw pi-home',
-        routerLink: '/',
-      },
-      {
         label: 'User Page',
         icon: 'pi pi-fw pi-user',
         routerLink: '/userhomepage',
