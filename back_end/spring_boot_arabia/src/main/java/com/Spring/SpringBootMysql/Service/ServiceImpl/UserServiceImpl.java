@@ -2,6 +2,7 @@ package com.Spring.SpringBootMysql.Service.ServiceImpl;
 
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +41,12 @@ public class UserServiceImpl implements UserService {
             userRepo.delete(userToDelete);
         }
     }
-    
+
+    //POST NEW USER
+    @Override
+    public User login(Map<String, String> dataMap) {
+        User client = userRepo.findByUsernameAndPassword(dataMap.get("username"), dataMap.get("password"));
+        return client;
+    }
 
 }

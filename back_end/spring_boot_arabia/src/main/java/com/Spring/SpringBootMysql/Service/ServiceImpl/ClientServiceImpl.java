@@ -4,7 +4,6 @@ import com.Spring.SpringBootMysql.Service.ClientService;
 import com.Spring.SpringBootMysql.model.Client;
 import com.Spring.SpringBootMysql.repository.ClientRepo;
 
-import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,13 +56,6 @@ public class ClientServiceImpl implements ClientService {
             Client clientToDelete = clientToDeleteOptional.get();
             clientRepo.delete(clientToDelete);
         }
-    }
-
-    //POST NEW USER
-    @Override
-    public Client login(Map<String, String> dataMap) {
-        Client client = clientRepo.findByUsernameAndPassword(dataMap.get("username"), dataMap.get("password"));
-        return client;
     }
     
     

@@ -3,8 +3,6 @@ package com.Spring.SpringBootMysql.controller;
 import com.Spring.SpringBootMysql.Service.ClientService;
 import com.Spring.SpringBootMysql.model.Client;
 
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -48,9 +46,5 @@ public class ClientController {
          clientService.deleteClient(id);
      }
 
-    //POST NEW CLIENT
-    @PostMapping("/login")
-    public Client login(@RequestBody Map<String, String> dataMap) {
-        return clientService.login(dataMap);
-    }
+    
 }

@@ -7,5 +7,4 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface ClientRepo extends CrudRepository<Client, Long> {
     
-    Client findByUsernameAndPassword(String username, String password);
 }
