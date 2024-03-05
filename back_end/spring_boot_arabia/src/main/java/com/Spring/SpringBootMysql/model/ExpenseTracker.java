@@ -25,7 +25,7 @@ public class ExpenseTracker {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long expensetracker_id;
     @NotBlank
-    private Long user_id;
+    private Long client_id;
 
     @JsonIgnore
     @Column(nullable = false, updatable = false)
@@ -50,10 +50,10 @@ public class ExpenseTracker {
     }
 
     public Long getUserID() {
-        return user_id;
+        return client_id;
     }
-    public void setUserID(Long user_id) {
-        this.user_id = user_id;
+    public void setUserID(Long client_id) {
+        this.client_id = client_id;
     }
 
     public Date getDate() {

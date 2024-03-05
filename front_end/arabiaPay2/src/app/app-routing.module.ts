@@ -32,7 +32,7 @@ const routes: Routes = [
 
   //general view 
   {
-    path: "",
+    path: "login",
     component: HomepageComponent,
   },
   {

@@ -30,15 +30,6 @@ public class UserController {
         return userService.createdUser(user);
     }
 
-    // EDIT USER
-    @PutMapping("/edituser/{id}")
-    public void updateUser(@PathVariable Long id, @RequestBody User updateUser) {
-
-        if (updateUser == null)
-            throw new NullPointerException();
-        userService.updateUser(id, updateUser);
-    }
-
     // DELETE
     @DeleteMapping("/deleteuser")
     public void deleteUser(@RequestParam Long id) {

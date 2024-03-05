@@ -23,7 +23,7 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transaction_id;
     @NotBlank
-    private Long user_id;
+    private Long client_id;
     @NotBlank
     private Long ewallet_id;
     @NotBlank
@@ -53,10 +53,10 @@ public class Transaction {
     }
 
     public Long getUserID() {
-        return user_id;
+        return client_id;
     }
-    public void setUserID(Long user_id) {
-        this.user_id = user_id;
+    public void setUserID(Long client_id) {
+        this.client_id = client_id;
     }
 
     public Long getEwalletID() {
