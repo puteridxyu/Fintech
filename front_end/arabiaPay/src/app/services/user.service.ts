@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,10 @@ export class UserService {
   constructor(private http : HttpClient) { }
 
   getUsers(){
-    return this.http.get(this.serverHost + "/users/users/");
+    return this.http.get(this.serverHost + "/userlist");
+  }
+
+  loginByUsernameAndPassword(input:any): Observable<any>{
+    return this.http.post(this.serverHost + "/login", input);
   }
 }

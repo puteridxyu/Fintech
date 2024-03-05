@@ -11,9 +11,9 @@ import { RippleModule } from 'primeng/ripple';
 import { PrimeNGConfig } from 'primeng/api';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { UserService } from 'src/app/services/user.service';
-import { ClientService } from 'src/app/services/client.service';
-import { VendorService } from 'src/app/services/vendor.service';
+import { UserService } from '../../services/user.service';;
+import { ClientService } from '../../services/client.service';;
+import { VendorService } from '../../services/vendor.service';
 
 
 @Component({

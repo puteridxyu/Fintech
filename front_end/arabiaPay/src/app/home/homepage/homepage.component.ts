@@ -50,28 +50,28 @@ export class HomepageComponent implements OnInit {
     });
   }
 
-  // onSubmit() {
-  //   console.log(this.loginUserForm.value);
-  //   this.userService.loginByUsernameAndPassword(this.loginUserForm.value).subscribe((res) => {
+  onSubmit() {
+    console.log(this.loginUserForm.value);
+    this.userService.loginByUsernameAndPassword(this.loginUserForm.value).subscribe((res) => {
 
-  //     if (res != null) {
-  //       const user_id = res.user_id;
-  //       if (res.level == "client") {
-  //         alert("Login successfully!");
-  //         this.router.navigate(['/userhompage',{user_id}]);
-  //       } else if (res.level == "vendor") {
-  //         alert("Login successfully!");
-  //         this.router.navigate(['/vendorhomepage',{user_id}]);
-  //       } else {
-  //         alert("Login successfully!");
-  //         this.router.navigate(['/adminhomepage',{user_id}]);
-  //       }
-  //     } else {
-  //       alert("User not found, Please enter correct email and password!");
-  //     }
-  //     console.log(res);
-  //   })
-  // }
+      if (res != null) {
+        const user_id = res.user_id;
+        if (res.level == "client") {
+          alert("Login successfully!");
+          this.router.navigate(['/userhompage',{user_id}]);
+        } else if (res.level == "vendor") {
+          alert("Login successfully!");
+          this.router.navigate(['/vendorhomepage',{user_id}]);
+        } else {
+          alert("Login successfully!");
+          this.router.navigate(['/adminhomepage',{user_id}]);
+        }
+      } else {
+        alert("User not found, Please enter correct email and password!");
+      }
+      console.log(res);
+    })
+  }
 
   navigateToUserhomepage() {
     this.router.navigate(['/userhomepage']);
