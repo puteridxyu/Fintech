@@ -6,6 +6,19 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
+//import for arabiapay
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HomepageComponent } from './home/homepage/homepage.component';
+import { CheckboxModule } from 'primeng/checkbox';
+import { PasswordModule } from "primeng/password";
+import { HttpClientModule } from '@angular/common/http';
+import { UserhomepageComponent } from './user/userhomepage/userhomepage.component';
+import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.component';
+
+
+
 // Import routing module
 import { AppRoutingModule } from './app-routing.module';
 
@@ -37,6 +50,8 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { VendorhomepageComponent } from './vendor/vendorhomepage/vendorhomepage.component';
+import { FloatLabelModule } from 'primeng/floatlabel';
 
 const APP_CONTAINERS = [
   DefaultFooterComponent,
@@ -46,7 +61,7 @@ const APP_CONTAINERS = [
 
 @NgModule({
   declarations: [AppComponent, ...APP_CONTAINERS],
-  imports: [
+  imports: [ 
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -72,7 +87,18 @@ const APP_CONTAINERS = [
     BadgeModule,
     ListGroupModule,
     CardModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    CommonModule,
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule ,
+    HttpClientModule,
+    CheckboxModule,
+    PasswordModule, 
+    FloatLabelModule, 
+    FormsModule,
+    RouterModule
+
   ],
   providers: [
     {

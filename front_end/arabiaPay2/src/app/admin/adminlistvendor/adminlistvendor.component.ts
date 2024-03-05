@@ -4,11 +4,12 @@ import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminheaderComponent } from '../adminheader/adminheader.component';
 import { MenuItem } from 'primeng/api';
+import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
 
 @Component({
   selector: 'app-adminlistvendor',
   standalone: true,
-  imports: [TableModule, HttpClientModule, AdminheaderComponent],
+  imports: [TableModule, HttpClientModule, AdminheaderComponent, FooterpageComponent],
   providers : [UserService],
   templateUrl: './adminlistvendor.component.html',
   styleUrl: './adminlistvendor.component.scss'

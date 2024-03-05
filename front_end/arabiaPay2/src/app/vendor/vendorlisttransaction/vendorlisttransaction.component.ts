@@ -5,12 +5,13 @@ import { UserService } from '../../services/user.service';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuItem } from 'primeng/api';
+import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
 
 
 @Component({
   selector: 'app-vendorlisttransaction',
   standalone: true,
-  imports: [CommonModule, VendorheaderComponent, TableModule, HttpClientModule],
+  imports: [CommonModule, VendorheaderComponent, TableModule, HttpClientModule, FooterpageComponent],
   providers : [ UserService],
   templateUrl: './vendorlisttransaction.component.html',
   styleUrl: './vendorlisttransaction.component.scss'

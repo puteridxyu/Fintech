@@ -5,11 +5,13 @@ import { UserService } from '../../services/user.service';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuItem } from 'primeng/api';
+import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
+
 
 @Component({
   selector: 'app-usertransactionhistory',
   standalone: true,
-  imports: [CommonModule, UserheaderComponent, TableModule, HttpClientModule],
+  imports: [CommonModule, UserheaderComponent, TableModule, HttpClientModule, FooterpageComponent],
   providers : [ UserService],
   templateUrl: './usertransactionhistory.component.html',
   styleUrl: './usertransactionhistory.component.scss'

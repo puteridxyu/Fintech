@@ -17,6 +17,7 @@ import { UserhomepageComponent } from './user/userhomepage/userhomepage.componen
 import { UserexpensetrackerComponent } from './user/userexpensetracker/userexpensetracker.component';
 import { UsertransactionpageComponent } from './user/usertransactionpage/usertransactionpage.component';
 import { UsertransactionhistoryComponent } from './user/usertransactionhistory/usertransactionhistory.component';
+import { UserinvoiceComponent } from './user/userinvoice/userinvoice.component';
 import { VendorhomepageComponent } from './vendor/vendorhomepage/vendorhomepage.component';
 import { VendorprofileComponent } from './vendor/vendorprofile/vendorprofile.component';
 import { VendorlisttransactionComponent } from './vendor/vendorlisttransaction/vendorlisttransaction.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: "usertransactionhistory",
     component: UsertransactionhistoryComponent,
+  },
+  {
+    path: "userinvoice",
+    component: UserinvoiceComponent,
   },
 
   //vendor view 

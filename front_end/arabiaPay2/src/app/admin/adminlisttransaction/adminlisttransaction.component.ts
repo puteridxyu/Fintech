@@ -5,12 +5,13 @@ import { UserService } from '../../services/user.service';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuItem } from 'primeng/api';
+import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
 
 
 @Component({
   selector: 'app-adminlisttransaction',
   standalone: true,
-  imports: [CommonModule, AdminheaderComponent, TableModule, HttpClientModule],
+  imports: [CommonModule, AdminheaderComponent, TableModule, HttpClientModule, FooterpageComponent],
   providers : [ UserService],
   templateUrl: './adminlisttransaction.component.html',
   styleUrl: './adminlisttransaction.component.scss'

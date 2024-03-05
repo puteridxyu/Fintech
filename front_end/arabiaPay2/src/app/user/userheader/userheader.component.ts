@@ -25,7 +25,7 @@ export class UserheaderComponent implements OnInit {
         routerLink: '/userexpensetracker',
       },
       {
-        label: 'Pay Bills',
+        label: 'Transfer to User',
         icon: 'pi pi-fw pi-money-bill',
         routerLink: '/usertransactionpage',
       },

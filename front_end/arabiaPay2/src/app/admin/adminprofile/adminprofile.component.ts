@@ -4,11 +4,12 @@ import { UserService } from '../../services/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminheaderComponent } from '../adminheader/adminheader.component';
 import { MenuItem } from 'primeng/api';
+import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
 
 @Component({
   selector: 'app-adminprofile',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, AdminheaderComponent],
+  imports: [CommonModule, HttpClientModule, AdminheaderComponent, FooterpageComponent],
   templateUrl: './adminprofile.component.html',
   styleUrl: './adminprofile.component.scss'
 })

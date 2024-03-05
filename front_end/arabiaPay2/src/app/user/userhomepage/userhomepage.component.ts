@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserheaderComponent } from '../userheader/userheader.component';
+import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
 
 @Component({
   selector: 'app-userhomepage',
   standalone: true,
-  imports: [CommonModule, UserheaderComponent],
+  imports: [CommonModule, UserheaderComponent, FooterpageComponent],
   templateUrl: './userhomepage.component.html',
   styleUrl: './userhomepage.component.scss'
 })
