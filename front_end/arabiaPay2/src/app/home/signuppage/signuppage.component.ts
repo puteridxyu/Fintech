@@ -52,10 +52,25 @@ export class SignuppageComponent implements OnInit {
     this.primengConfig.ripple = true;
     this.signupUserForm = this.formBuilder.group({
       username: [null, [Validators.required]],
+      password: [null, [Validators.required]],
+      email: [null, [Validators.required]],
+      phone_no: [null, [Validators.required]],
+      user_id: [null, [Validators.required]],
+    });
+  
+  onSubmit() {
 
-
+    const password = this.signupUserForm.value.password;
+    const email = this.signupUserForm.value.email;
+    const phone_no = this.signupUserForm.value.phone_no;
+    const user_id = this.signupUserForm.value.user_id;
+    const loginData = {"username":}
   }
-  navigateToUserhomepage() {
+
+  
+  }  
+  
+    navigateToUserhomepage() {
     this.router.navigate(['/userhomepage']);
   }
   goToLoginpage() {
