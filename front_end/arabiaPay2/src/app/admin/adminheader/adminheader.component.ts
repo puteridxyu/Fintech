@@ -30,6 +30,11 @@ export class AdminheaderComponent implements OnInit {
         routerLink: '/adminlistvendor',
       },
       {
+        label: 'List Transaction',
+        icon: 'pi pi-fw pi-book',
+        routerLink: '/adminlisttransaction',
+      },
+      {
         label: 'Admin Profile',
         icon: 'pi pi-fw pi-user',
         routerLink: '/adminprofile',

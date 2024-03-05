@@ -25,7 +25,7 @@ import { AdminhomepageComponent } from './admin/adminhomepage/adminhomepage.comp
 import { AdminprofileComponent } from './admin/adminprofile/adminprofile.component';
 import { AdminlistuserComponent } from './admin/adminlistuser/adminlistuser.component';
 import { AdminlistvendorComponent } from './admin/adminlistvendor/adminlistvendor.component';
-
+import { AdminlisttransactionComponent } from './admin/adminlisttransaction/adminlisttransaction.component';
 
 const routes: Routes = [
 
@@ -108,6 +108,10 @@ const routes: Routes = [
   {
     path: "adminlistvendor",
     component: AdminlistvendorComponent,
+  },
+   {
+    path: "adminlisttransaction",
+    component: AdminlisttransactionComponent,
   },
 
 
