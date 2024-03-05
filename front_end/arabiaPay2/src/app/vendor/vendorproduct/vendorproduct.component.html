@@ -1,5 +1,8 @@
 <header><app-vendorheader></app-vendorheader></header>
-<b><p>VENDOR PRODUCT</p></b>
+
+
+<div class="surface-card p-4 shadow-2 border-round w-full lg:w-6 mx-auto">
+    <b><p>VENDOR PRODUCT</p></b>
 <div class="card">
     <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
         <ng-template pTemplate="header">
@@ -21,7 +24,7 @@
         </ng-template>
     </p-table>
 </div>
-
+</div>
 <footer>
     <app-footerpage></app-footerpage>
   </footer>
