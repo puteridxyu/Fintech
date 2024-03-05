@@ -6,7 +6,7 @@ import { ProductService } from '../../services/product.service';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterpageComponent } from '../../home/footerpage/footerpage.component';
-import { UserService } from 'src/app/services/user.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-vendorproduct',
