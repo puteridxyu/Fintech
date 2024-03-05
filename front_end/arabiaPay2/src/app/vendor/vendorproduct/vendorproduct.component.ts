@@ -6,17 +6,15 @@ import { ProductService } from '../../services/product.service';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterpageComponent } from 'src/app/home/footerpage/footerpage.component';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-vendorproduct',
   standalone: true,
-<<<<<<< Updated upstream
-  imports: [CommonModule, VendorheaderComponent, TableModule, HttpClientModule],
-  providers: [ProductService],
-=======
+
   imports: [CommonModule, VendorheaderComponent, TableModule, HttpClientModule, FooterpageComponent],
-  providers : [ UserService],
->>>>>>> Stashed changes
+  providers: [ProductService],
+
   templateUrl: './vendorproduct.component.html',
   styleUrls: ['./vendorproduct.component.scss']
 })
