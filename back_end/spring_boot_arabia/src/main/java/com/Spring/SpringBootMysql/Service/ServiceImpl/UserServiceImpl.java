@@ -4,6 +4,7 @@ import com.Spring.SpringBootMysql.Service.UserService;
 import com.Spring.SpringBootMysql.model.User;
 import com.Spring.SpringBootMysql.repository.UserRepo;
 
+import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,6 +57,13 @@ public class UserServiceImpl implements UserService {
             User userToDelete = userToDeleteOptional.get();
             userRepo.delete(userToDelete);
         }
+    }
+
+    //POST NEW USER
+    @Override
+    public User login(Map<String, String> dataMap) {
+        User user = userRepo.findByUsernameAndPassword(dataMap.get("username"), dataMap.get("password"));
+        return user;
     }
     
     

@@ -26,6 +26,8 @@ public class Transaction {
     private Long user_id;
     @NotBlank
     private Long ewallet_id;
+    @NotBlank
+    private Long vendor_id;
 
     @JsonIgnore
     @Column(nullable = false, updatable = false)
@@ -37,6 +39,8 @@ public class Transaction {
     private Date date;
     @NotBlank
     private Double amount;
+    @NotBlank
+    private String desc;
     @NotBlank
     private Boolean trans_status;
 
@@ -82,4 +86,19 @@ public class Transaction {
     public void setTransStatus(Boolean trans_status) {
         this.trans_status = trans_status;
     }
+
+    public Long getVendor_id() {
+        return vendor_id;
+    }
+    public void setVendor_id(Long vendor_id) {
+        this.vendor_id = vendor_id;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+    
 }

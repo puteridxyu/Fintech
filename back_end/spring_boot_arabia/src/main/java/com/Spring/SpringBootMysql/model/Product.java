@@ -20,6 +20,8 @@ public class Product {
     private String product_name;
     @NotBlank
     private Double product_price;
+    @NotBlank
+    private String product_desc;
 
     public long getProduct_id() {
         return product_id;
@@ -51,5 +53,12 @@ public class Product {
 
     public void setProduct_price(Double product_price) {
         this.product_price = product_price;
+    }
+
+    public String getProduct_desc() {
+        return product_desc;
+    }
+    public void setProduct_desc(String product_desc) {
+        this.product_desc = product_desc;
     }
 }

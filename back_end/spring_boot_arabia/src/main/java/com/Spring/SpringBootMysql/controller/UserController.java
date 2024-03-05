@@ -2,6 +2,9 @@ package com.Spring.SpringBootMysql.controller;
 
 import com.Spring.SpringBootMysql.Service.UserService;
 import com.Spring.SpringBootMysql.model.User;
+
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +27,7 @@ public class UserController {
     }
 
     //POST NEW USER
-    @PostMapping("/inputuser")
+    @PostMapping("/register")
     public User createdUser(@RequestBody User user) {
 
         if (user == null) throw new NullPointerException();
@@ -39,9 +42,15 @@ public class UserController {
         userService.updateUser(id, updateUser);
     }
     
-     //DELETE
+    //DELETE
      @DeleteMapping("/deleteuser")
      public void deleteUser(@RequestParam Long id) {
          userService.deleteUser(id);
      }
+
+    //POST NEW USER
+    @PostMapping("/login")
+    public User loginUser(@RequestBody Map<String, String> dataMap) {
+        return userService.login(dataMap);
+    }
 }

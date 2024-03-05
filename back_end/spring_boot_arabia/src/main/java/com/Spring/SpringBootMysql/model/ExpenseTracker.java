@@ -39,6 +39,9 @@ public class ExpenseTracker {
     @NotBlank
     private Double total_amount;
 
+    @NotBlank
+    private Double target_month;
+
     public Long getExpensetrackerID() {
         return expensetracker_id;
     }
@@ -65,5 +68,12 @@ public class ExpenseTracker {
     }
     public void setTotalAmount(Double total_amount) {
         this.total_amount = total_amount;
+    }
+
+    public Double getTarget_month() {
+        return target_month;
+    }
+    public void setTarget_month(Double target_month) {
+        this.target_month = target_month;
     }
 }
