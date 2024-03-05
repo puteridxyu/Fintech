@@ -28,4 +28,11 @@ export class HomepageComponent {
   navigateToUserhomepage() {
     this.router.navigate(['/userhomepage']);
   }
+  goToSignUpPage(){
+    this.router.navigate(['/signup']);
+  }
+  goToForgotPage(){
+    this.router.navigate(['/forgot']);
+  }
+  
 }

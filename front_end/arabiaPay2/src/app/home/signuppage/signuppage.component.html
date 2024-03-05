@@ -2,10 +2,10 @@
 
 <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6 mx-auto">
     <div class="text-center mb-5">
-        <img src="assets/images/ArabiaPay.png" alt="Image" height="150" class="mb-3">
+        <img src="assets/images/ArabiaPay.png" alt="Image" height="200" class="mb-3">
         <div class="text-900 text-3xl font-medium mb-3"><b>HI! LET'S JOIN US!</b> </div>
             <span class="text-600 font-medium line-height-3">Already have an account?</span>
-            <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Click here!</a>
+            <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" (click)="goToLoginpage()">Click here!</a>
     </div>
 
     <div>
@@ -17,7 +17,7 @@
 
         <div class="flex align-items-center justify-content-between mb-6"></div>
 
-        <button pButton pRipple label="Register Now" icon="pi pi-user" class="w-full"></button>
+        <button pButton pRipple label="Register Now" icon="pi pi-user" class="w-full" (click)="navigateToUserhomepage()"></button>
     </div>
 </div>
 <footer>

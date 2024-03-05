@@ -15,14 +15,24 @@ export class HeaderpageComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Home',
+        label: 'Login Page',
         icon: 'pi pi-fw pi-home',
         routerLink: '/',
       },
       {
-        label: 'User Profile',
+        label: 'User Page',
         icon: 'pi pi-fw pi-user',
-        routerLink: '/userprofile',
+        routerLink: '/userhomepage',
+      },
+      {
+        label: 'Vendor Page',
+        icon: 'pi pi-fw pi-user',
+        routerLink: '/vendorhomepage',
+      },
+      {
+        label: 'Admin Page',
+        icon: 'pi pi-fw pi-user',
+        routerLink: '/adminhomepage',
       },
       {
         label: 'Contact Us',
@@ -30,13 +40,16 @@ export class HeaderpageComponent implements OnInit {
         routerLink: '/contact',
       },
       {
-        label: 'Do not have account? Sign up here',
+        label: 'Sign up here',
+        icon: 'pi pi-fw pi-sign-in',
         routerLink: '/signup',
       },
       {
-        label: 'admin homepage',
-        routerLink: '/adminhomepage',
+        label: 'Forgot',
+        icon: 'pi pi-fw pi-apple',
+        routerLink: '/forgot',
       },
+      
     ];
   }
 }

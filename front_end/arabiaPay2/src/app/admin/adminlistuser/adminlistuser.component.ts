@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { TableModule } from 'primeng/table';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderpageComponent } from '../../home/headerpage/headerpage.component';
+import { AdminheaderComponent } from '../adminheader/adminheader.component';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-adminlistuser',
   standalone: true,
-  imports: [TableModule, HttpClientModule, HeaderpageComponent],
+  imports: [TableModule, HttpClientModule, AdminheaderComponent],
   providers : [UserService],
   templateUrl: './adminlistuser.component.html',
   styleUrl: './adminlistuser.component.scss'

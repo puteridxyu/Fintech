@@ -10,7 +10,7 @@
           <span class="text-red-600">ArabiaPay</span>
         </div>
         <span class="text-600 font-medium line-height-3">Don't have an account?</span>
-        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create now!</a>
+        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer" (click)="goToSignUpPage()">Create now! </a>
     </div>
 
     <div>
@@ -25,7 +25,7 @@
                 <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox>
                 <label for="rememberme1" class="text-900">Remember me</label>
             </div>
-            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer" (click)="goToForgotPage()">Forgot password?</a>
         </div>
         
         <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full" (click)="navigateToUserhomepage()"></button>
