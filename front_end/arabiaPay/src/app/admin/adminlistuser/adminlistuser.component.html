@@ -24,9 +24,10 @@
         </tr>
         
     </ng-template>
-    <ng-template pTemplate="body" let-user>
+    <ng-template pTemplate="body" let-user let-i="rowIndex">
+            
         <tr style="text-align: left;">
-            <td style="text-align: center;">1</td>
+            <td>{{ i + 1 }}</td>
             <td>{{user.username}}</td>
             <td>{{user.level}}</td>
             <td>
