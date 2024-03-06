@@ -20,11 +20,6 @@ export class VendorheaderComponent implements OnInit {
         routerLink: '/vendorhomepage',
       },
       {
-        label: 'Vendor Profile',
-        icon: 'pi pi-fw pi-user',
-        routerLink: '/vendorprofile',
-      },
-      {
         label: 'Product Management',
         icon: 'pi pi-fw pi-shopping-bag',
         routerLink: '/vendorproduct',
@@ -33,6 +28,11 @@ export class VendorheaderComponent implements OnInit {
         label: 'List Transactions',
         icon: 'pi pi-fw pi-book',
         routerLink: '/vendorlisttransaction',
+      },
+      {
+        label: 'Vendor Profile',
+        icon: 'pi pi-fw pi-user',
+        routerLink: '/vendorprofile',
       },
       {
         label: 'Logout',
