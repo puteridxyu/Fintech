@@ -18,7 +18,7 @@ public class Vendor {
     private String password;
     private String email;
     private Integer phone_no;
-    private Integer userlevel_id;
+    private String user_id;
 
     public Long getVendorID() {
         return vendor_id;
@@ -60,11 +60,11 @@ public class Vendor {
         this.phone_no = phone_no;
     }
 
-    public Integer getUserLevelID() {
-        return userlevel_id;
+    public String getUserLevelID() {
+        return user_id;
     }
 
-    public void setUserLevelID(Integer userlevel_id) {
-        this.userlevel_id = userlevel_id;
+    public void setUserLevelID(String user_id) {
+        this.user_id = user_id;
     }
 }
