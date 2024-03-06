@@ -15,39 +15,14 @@ export class HeaderpageComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Login Page',
+        label: 'Home',
         icon: 'pi pi-fw pi-home',
         routerLink: '/',
-      },
-      {
-        label: 'User Page',
-        icon: 'pi pi-fw pi-user',
-        routerLink: '/userhomepage',
-      },
-      {
-        label: 'Vendor Page',
-        icon: 'pi pi-fw pi-user',
-        routerLink: '/vendorhomepage',
-      },
-      {
-        label: 'Admin Page',
-        icon: 'pi pi-fw pi-user',
-        routerLink: '/adminhomepage',
       },
       {
         label: 'Contact Us',
         icon: 'pi pi-fw pi-phone',
         routerLink: '/contact',
-      },
-      {
-        label: 'Sign up here',
-        icon: 'pi pi-fw pi-sign-in',
-        routerLink: '/signup',
-      },
-      {
-        label: 'Forgot',
-        icon: 'pi pi-fw pi-apple',
-        routerLink: '/forgot',
       },
       
     ];
