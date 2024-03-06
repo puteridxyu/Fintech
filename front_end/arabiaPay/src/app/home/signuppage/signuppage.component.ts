@@ -110,7 +110,7 @@ export class SignuppageComponent implements OnInit {
     this.router.navigate(['/userhomepage']);
   }
     goToLoginpage() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
 
 }

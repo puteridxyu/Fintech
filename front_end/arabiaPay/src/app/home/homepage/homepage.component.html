@@ -16,12 +16,12 @@
       <form [formGroup]="loginUserForm" (ngSubmit)="onSubmit()">
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
-          <input id="username" formControlName="username" type="text" class="form-control" placeholder="Enter your username">
+          <input id="username" formControlName="username" type="text" class="form-control" placeholder="Enter your username" pInputText class="w-full mb-1" required>
         </div>
 
         <div class="mb-3">
           <label for="password1" class="form-label">Password</label>
-          <input id="password1" formControlName="password" type="password" class="form-control" placeholder="Enter your password">
+          <input id="password1" formControlName="password" type="password" class="form-control" placeholder="Enter your password" pInputText class="w-full mb-1" required>
         </div>
 
         <div class="mb-3 form-check">
