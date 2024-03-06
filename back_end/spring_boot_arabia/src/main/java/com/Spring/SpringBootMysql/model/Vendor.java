@@ -17,7 +17,7 @@ public class Vendor {
     private String username;
     private String password;
     private String email;
-    private Integer phone_no;
+    private String phone_no;
     private String user_id;
 
     public Long getVendorID() {
@@ -52,11 +52,11 @@ public class Vendor {
         this.email = email;
     }
 
-    public Integer getPhoneNo() {
+    public String getPhoneNo() {
         return phone_no;
     }
 
-    public void setPhoneNo(Integer phone_no) {
+    public void setPhoneNo(String phone_no) {
         this.phone_no = phone_no;
     }
 
