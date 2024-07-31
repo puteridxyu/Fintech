@@ -16,6 +16,19 @@ Functional Requirements
 
 7. Expense Management Module Budgeting and Tracking: Users should be able to set budgets and track their monthly expenses. Visualizations and Reports: The system should provide users with visualizations and reports on spending patterns over time.
 
-By integrating these modules, arabiaPay aims to deliver a comprehensive and user-friendly financial management experience, empowering users to manage their finances effectively and efficiently.
+By integrating these modules, arabiaPay aims to deliver a comprehensive and user-friendly financial management experience, empowering users to manage their finances effectively and efficiently. Here are some examples of the interface:
+
 
 ![1](https://github.com/user-attachments/assets/2f388a23-4524-4f60-8ea8-2bdda5c4a240)
+
+
+![admin1](https://github.com/user-attachments/assets/b897760d-a8a1-4788-8453-b601177f184a)
+
+
+![admin2](https://github.com/user-attachments/assets/ca539406-171d-4344-b460-3475f3ad88b8)
+
+
+![user1](https://github.com/user-attachments/assets/c8773255-d4e3-4f3d-8566-cf1fe539d854)
+
+
+![user3](https://github.com/user-attachments/assets/1c8bcbb3-ce46-4d15-a30c-02aafc21002c)
