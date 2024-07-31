@@ -1,6 +1,6 @@
 # Fintech
 
-Introduction to arabiaPay arabiaPay is an innovative digital wallet application designed to streamline financial transactions and management for users. The platform aims to provide a comprehensive solution for handling everyday financial activities with ease and security. Our robust system is built to cater to both users and administrators, ensuring a seamless and efficient experience for all.
+ArabiaPay is a cutting-edge digital wallet application crafted to revolutionize the way users manage their finances. Powered by Angular for a dynamic user interface, Spring Boot for robust backend services, and MySQL for secure data storage, arabiaPay seamlessly integrates technology to simplify everyday financial activities. Whether you're an individual user or an administrator, our platform offers a sleek, intuitive experience that makes financial management effortless and secure.
 
 Functional Requirements
 
